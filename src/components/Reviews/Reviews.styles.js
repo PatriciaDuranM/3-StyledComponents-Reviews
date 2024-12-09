@@ -1,8 +1,50 @@
 import styled from 'styled-components';
 
-/*caja*/
+/*caja de cards*/
+const StyledContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 
-const StyledCardReview = styled.div``;
+	@media screen and (width>768px) {
+		width: 1110px;
+		height: 266px;
+		flex-direction: row;
+		gap: 30px;
+	}
+`;
+
+/*card*/
+const StyledCardReview = styled.div`
+	width: 327px;
+	height: 248px;
+	border-radius: 8px;
+	background-color: #512051;
+	display: flex;
+	flex-direction: column;
+	padding-inline: 32px;
+	padding-top: 40px;
+	padding-bottom: 32px;
+	gap: 23px;
+
+	@media screen and (width>768px) {
+		padding-bottom: 36px;
+		width: 350px;
+		gap: 31px;
+
+		&:first-child {
+			align-self: flex-start;
+		}
+
+		&:nth-child(2) {
+			align-self: center;
+		}
+
+		&:last-child {
+			align-self: flex-end;
+		}
+	}
+`;
 
 /*div imagen y texto*/
 const StyledDivImgText = styled.div`
@@ -46,6 +88,7 @@ const StyledText = styled.p`
 	font-size: 17px;
 	font-weight: 500;
 	line-height: 22px;
+	letter-spacing: -0.3px;
 `;
 
 export {
@@ -54,5 +97,7 @@ export {
 	StyledProfileInfo,
 	StyledName,
 	StyledState,
-	StyledText
+	StyledText,
+	StyledCardReview,
+	StyledContainer
 };

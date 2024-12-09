@@ -28,4 +28,8 @@ export const GlobalStyles = createGlobalStyle`
         font-family:"League Spartan", sans-serif;
     }
 
+    h3, h4, h6, p{
+        margin: 0px;
+    }
+
 `;

@@ -1,8 +1,14 @@
-import { StyledContainer } from "./containter.styles"
+import Header from '../Header/Header';
+import Stars from '../stars/Stars';
+import { StyledContainer } from './containter.styles';
 
-
-const Container = ({children,$direction, $paddingLine,$paddingBlock, $gap}) =>{
-    return <StyledContainer $direction={$direction} $paddingLine={$paddingLine} $paddingBlock={$paddingBlock} $gap={$gap}>{children}</StyledContainer>
-}
+const Container = () => {
+	return (
+		<StyledContainer>
+			<Header></Header>
+			<Stars></Stars>
+		</StyledContainer>
+	);
+};
 
 export default Container;

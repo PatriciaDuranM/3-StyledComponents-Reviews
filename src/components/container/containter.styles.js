@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 const StyledContainer = styled.div`
 	display: flex;
-	flex-direction: ${({ $direction }) => $direction};
-	padding-inline: ${({ $paddingLine }) => $paddingLine};
-	padding-block: ${({ $paddingBlock }) => $paddingBlock};
-	gap: ${({ $gap }) => $gap};
+	flex-direction: column;
+	gap: 39px;
 
 	@media screen and (width> 768px) {
-		flex-direction: ${({ $direction }) => $direction};
+		width: 1110px;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 `;
 
