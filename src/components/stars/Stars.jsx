@@ -5,8 +5,8 @@ import { StyledContainer, StyledRatingBox, StyledRatingText, StyledStarBox } fro
 const Stars = () =>{
     return (
     <StyledContainer>
-        {STARS_INFO.map((info, index) =>(
-            <StyledRatingBox key={index}>
+        {STARS_INFO.map((info) =>(
+            <StyledRatingBox key={info.id}>
         <StyledStarBox>
             <img src="./public/assets/images/icon-star.svg" alt="" />
             <img src="./public/assets/images/icon-star.svg" alt="" />

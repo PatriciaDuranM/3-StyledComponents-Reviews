@@ -1,7 +1,7 @@
-import { StyledTitle, StyledText } from './title.styles';
+import { StyledTitle, StyledText } from './header.styles';
 
 
-const Title = ({ text }) => {
+const Header = ({ text }) => {
     return (
       <>
         <StyledTitle>{text}</StyledTitle>
@@ -10,4 +10,4 @@ const Title = ({ text }) => {
     );
   };
   
-  export default Title;
+  export default Header;

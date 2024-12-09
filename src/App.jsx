@@ -1,7 +1,7 @@
 
 import Container from './components/container/Container';
+import Header from './components/Header/Header';
 import Stars from './components/stars/Stars';
-import Title from './components/title/title';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
 			<GlobalStyles />
 			<Container $direction={'column'} $paddingLine={'24px'} $paddingBlock={'82px'}>
 				<Container $direction={'column'} $gap={'17px'}>
-					<Title text={'10,000+ of our users love our products.'}></Title>
+					<Header text={'10,000+ of our users love our products.'}></Header>
 					<Container>
 						<Stars/>
 					</Container>

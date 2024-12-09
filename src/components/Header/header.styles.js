@@ -26,5 +26,4 @@ const StyledText = styled.p`
 	}
 `;
 
-export { StyledTitle };
-export { StyledText };
+export { StyledTitle, StyledText };

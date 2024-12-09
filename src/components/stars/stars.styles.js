@@ -22,6 +22,15 @@ const StyledRatingBox = styled.div`
 	color: #512051;
 	text-align: center;
 	padding-block: 16px;
+
+	@media screen and (width>768px) {
+		width: 445px;
+		height: 56px;
+		flex-direction: row;
+		gap: 32px;
+		padding-block: 20px;
+		padding-left: 32px;
+	}
 `;
 
 /*caja estrellas*/
@@ -30,6 +39,10 @@ const StyledStarBox = styled.div`
 	flex-direction: row;
 	gap: 8px;
 	margin-inline: auto;
+
+	@media screen and (width>768px) {
+		margin: 0px;
+	}
 `;
 
 /*texto*/
