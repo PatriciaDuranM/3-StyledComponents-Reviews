@@ -17,6 +17,8 @@ const StyledMain = styled.div`
 		padding-inline: 164px;
 		padding-block: 118px;
 		gap: 71px;
+		background-image: url(public/assets/images/bg-pattern-top-desktop.svg),
+			url(public/assets/images/bg-pattern-bottom-desktop.svg);
 	}
 `;
 

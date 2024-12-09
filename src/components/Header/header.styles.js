@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+const StyledHeader = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	@media screen and (width> 768px) {
+		width: 445px;
+	}
+`;
+
 const StyledTitle = styled.h2`
 	font-size: 40px;
 	color: #512051;
@@ -10,6 +20,9 @@ const StyledTitle = styled.h2`
 
 	@media screen and (width> 768px) {
 		text-align: start;
+		font-size: 56px;
+		line-height: 48px;
+		letter-spacing: -2px;
 	}
 `;
 
@@ -23,7 +36,8 @@ const StyledText = styled.p`
 
 	@media screen and (width> 768px) {
 		text-align: start;
+		width: 445px;
 	}
 `;
 
-export { StyledTitle, StyledText };
+export { StyledTitle, StyledText, StyledHeader };

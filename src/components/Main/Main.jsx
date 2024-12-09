@@ -1,4 +1,4 @@
-import { StyledMain } from './Main';
+import { StyledMain } from './Main.styles';
 
 const Main = ({ children }) => {
 	return <StyledMain>{children}</StyledMain>;

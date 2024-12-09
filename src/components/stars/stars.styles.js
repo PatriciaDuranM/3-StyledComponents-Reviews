@@ -7,6 +7,8 @@ const StyledContainer = styled.div`
 	gap: 16px;
 
 	@media screen and (width> 768px) {
+		width: 540px;
+		height: 200px;
 	}
 `;
 
@@ -30,6 +32,18 @@ const StyledRatingBox = styled.div`
 		gap: 32px;
 		padding-block: 20px;
 		padding-left: 32px;
+
+		&:first-child {
+			align-self: flex-start;
+		}
+
+		&:nth-child(2) {
+			align-self: center;
+		}
+
+		&:last-child {
+			align-self: flex-end;
+		}
 	}
 `;
 
